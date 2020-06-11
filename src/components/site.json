@@ -1,0 +1,32 @@
+{
+    "settings": {
+        "output_folder": "/assets/",
+        "images_sizes": [
+            {
+                "name": "small",
+                "value": 500
+            },
+            {
+                "name": "medium",
+                "value": 1000
+            },
+            {
+                "name": "large",
+                "value": 1500
+            }
+        ]
+    },
+    "metadata": {
+        "appName": "carStats - website",
+        "appDescription": "Welcome on the carStats showcase website",
+        "lang": "fr-FR",
+        "websiteURL": "https://carstats.now.sh/"
+    },
+    "pages": {
+        "index": {
+            "title": "Accueil",
+            "path": "./",
+            "type": "internal"
+        }
+    }
+}

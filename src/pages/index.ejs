@@ -1,0 +1,8 @@
+<%= require('../components/pages/head.ejs')({
+    _currentTitle_: htmlWebpackPlugin.options.title,
+    _currentFile_: htmlWebpackPlugin.options.filename
+}) %>
+
+
+<%= require('../components/pages/header.ejs')() %>
+<%= require('../components/pages/footer.ejs')() %>

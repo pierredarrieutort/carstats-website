@@ -1,0 +1,35 @@
+<% const SITE_JSON = require('../site.json') %>
+<!DOCTYPE html>
+<html lang="<%= SITE_JSON.metadata.lang %>">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="<%= SITE_JSON.metadata.appDescription %>">
+    <title><%= SITE_JSON.metadata.appName %> - <%= _currentTitle_ %></title>
+    <meta property="og:title" content="<%= SITE_JSON.metadata.appName %> - <%= _currentTitle_ %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= SITE_JSON.metadata.websiteURL %>" />
+    <meta property="og:image" content="<%= require('../../img/Logo.png') %>" />
+    <meta property="og:site_name" content="<%= SITE_JSON.metadata.appName %>" />
+    <meta property="og:description" content="<%= SITE_JSON.metadata.appDescription %>" />
+    <meta property="og:image:secure_url" content="<%= require('../../img/Logo.png') %>" />
+    <meta property="og:image:width" content="316" />
+    <meta property="og:image:height" content="316" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="<%= require('../../img/Logo.png') %>" />
+    <meta property="twitter:site" content="@Pedr0Zorus" />
+</head>
+
+<body data-barba="wrapper">
+
+    <noscript>
+        <p>JavaScript is disabled on your browser.</p>
+        <p>Please make sure you have enabled JavaScript before visit the website.</p>
+        <p>Here are the <a href="https://www.enable-javascript.com/">instructions how to enable JavaScript in your web
+                browser</a>.</p>
+    </noscript>
+
+    <section id="main-container">
+        <main data-barba="container" id="<%= _currentFile_.match(/(?:\.\/)(.*?)(?:\.html)/)[1] %>">

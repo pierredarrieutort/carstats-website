@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'geomanist';
+    src: url('../fonts/geomanist-black.woff2') format('woff2'),
+        url('../fonts/geomanist-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'futura';
+    src: url('../fonts/Futura-PT.woff2') format('woff2'),
+        url('../fonts/Futura-PT.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+%futura {
+    font-family: 'futura', sans-serif;
+}
+
+%futura-title {
+    @extend %futura;
+
+    @media (max-width: 899px) {
+        font-size: 12vw;
+    }
+
+    @media (min-width: 900px) {
+        font-size: 3.25vw;
+    }
+}
+
+%futura-subtitle {
+    @extend %futura;
+
+    @media (max-width: 899px) {
+        font-size: 6vw;
+    }
+
+    @media (min-width: 900px) {
+        font-size: 1.74vw;
+    }
+}
+
+%text-font-size {
+    @media (max-width: 899px) {
+        font-size: 4vw;
+    }
+
+    @media (min-width: 900px) {
+        font-size: 1.7vw;
+    }
+}
+
+%futura-text {
+    @extend %futura;
+    @extend %text-font-size;
+}
+
+%geomanist {
+    font-family: 'geomanist', sans-serif;
+
+    @media (max-width: 899px) {
+        font-size: 15vw;
+    }
+
+    @media (min-width: 900px) {
+        font-size: 18vw;
+    }
+}
